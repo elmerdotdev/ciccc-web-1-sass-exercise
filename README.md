@@ -1,6 +1,6 @@
 # Web Dev 1 - SCSS Exercise
 
-Welcome to the SCSS exercise! In this task, you'll be creating a simple webpage and styling it using SCSS. The goal is to practice and understand the basics of SCSS including nesting, variables, mixins, and partials.
+**Goal:** To practice and understand the basics of SCSS including nesting, variables, mixins, and partials.
 
 ## Instructions
 
