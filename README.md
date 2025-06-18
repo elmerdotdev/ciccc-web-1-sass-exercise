@@ -2,7 +2,7 @@
 
 **Goal:** To practice and understand the basics of SCSS including nesting, variables, mixins, and partials.
 
-## Instructions
+## Instructions ✅
 
 **Set Up Your Project**
 Create a new directory for your project.
@@ -51,7 +51,7 @@ In `index.html`, create a basic HTML structure with a header, a main content sec
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 SCSS Exercise</p>
+        <p>&copy; SCSS Exercise</p>
     </footer>
 </body>
 </html>
@@ -84,29 +84,34 @@ In `scss/_header.scss`, style the header using nesting and the variables:
 
 ```scss
 // _header.scss
-@import 'variables';
-@import 'mixins';
+@use 'variables';
+@use 'mixins';
+
 header {
-    background-color: $primary-color;
-    color: white;
-    padding: 20px;
-    h1 {
-        margin: 0;
-    }
-    nav {
-        ul {
-            @include flex-center;
-            list-style: none;
-            padding: 0;
-            li {
-                margin: 0 10px;
-                a {
-                    color: white;
-                    text-decoration: none;
-                }
-            }
+  background-color: variables.$primary-color;
+  color: white;
+  padding: 20px;
+
+  h1 {
+    margin: 0;
+  }
+
+  nav {
+    ul {
+      @include mixins.flex-center;
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin: 0 10px;
+
+        a {
+          color: white;
+          text-decoration: none;
         }
+      }
     }
+  }
 }
 ```
 
@@ -115,13 +120,14 @@ In `scss/_footer.scss`, style the footer similarly:
 
 ```scss
 // _footer.scss
-@import 'variables';
-@import 'mixins';
+@use 'variables';
+@use 'mixins';
+
 footer {
-    background-color: $secondary-color;
-    color: white;
-    padding: 10px;
-    text-align: center;
+  background-color: variables.$secondary-color;
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
 ```
 
@@ -130,24 +136,28 @@ In `scss/main.scss`, import all the partials:
 
 ```scss
 // main.scss
-@import 'variables';
-@import 'mixins';
-@import 'header';
-@import 'footer';
+@use 'variables';
+@use 'mixins';
+@use 'header';
+@use 'footer';
+
 body {
-    font-family: $font-stack;
-    margin: 0;
+  font-family: variables.$font-stack;
+  margin: 0;
 }
+
 main {
+  padding: 20px;
+
+  section {
+    background-color: #f4f4f4;
     padding: 20px;
-    section {
-        background-color: #f4f4f4;
-        padding: 20px;
-        border-radius: 5px;
-        h2 {
-            color: $primary-color;
-        }
+    border-radius: 5px;
+
+    h2 {
+      color: variables.$primary-color;
     }
+  }
 }
 ```
 
