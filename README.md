@@ -5,6 +5,7 @@
 ## Instructions ✅
 
 **Set Up Your Project**
+
 Create a new directory for your project.
 Inside this directory, create the following structure:
 
@@ -22,6 +23,7 @@ project/
 ```
 
 **HTML Structure**
+
 In `index.html`, create a basic HTML structure with a header, a main content section, and a footer:
 
 ```html
@@ -58,6 +60,7 @@ In `index.html`, create a basic HTML structure with a header, a main content sec
 ```
 
 **Create Variables**
+
 In `scss/_variables.scss`, define some variables for colors and fonts:
 
 ```scss
@@ -68,6 +71,7 @@ $font-stack: 'Helvetica Neue', sans-serif;
 ```
 
 **Create Mixins**
+
 In `scss/_mixins.scss`, create a mixin for a flexbox container:
 
 ```scss
@@ -80,6 +84,7 @@ In `scss/_mixins.scss`, create a mixin for a flexbox container:
 ```
 
 **Style the Header**
+
 In `scss/_header.scss`, style the header using nesting and the variables:
 
 ```scss
@@ -116,6 +121,7 @@ header {
 ```
 
 **Style the Footer**
+
 In `scss/_footer.scss`, style the footer similarly:
 
 ```scss
@@ -132,6 +138,7 @@ footer {
 ```
 
 **Main SCSS File**
+
 In `scss/main.scss`, import all the partials:
 
 ```scss
