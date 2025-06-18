@@ -161,11 +161,9 @@ main {
 }
 ```
 
-**Compile SCSS to CSS**
-Use a SCSS compiler to compile `scss/main.scss` into `css/main.css`. You can use tools like `sass` CLI, Prepros, or an online compiler.
+**Compile SCSS to CSS:** Use a SCSS compiler to compile `scss/main.scss` into `css/main.css`. You can use tools like `sass` CLI.
 
-**Open Your HTML File**
-Open `index.html` in your browser to see your styled webpage.
+**Open Your HTML File:** Open `index.html` in your browser to see your styled webpage.
 
 ## Additional Tasks (If You Have Time)
 
